@@ -28,7 +28,7 @@ const displayMacros = (e) => {
     console.log(`${key}: ${userNutrition[key]}`)
 
     const btn = document.createElement('button')
-    btn.innerHTML = `${key}: <span class="blue">${userNutrition[key]}g<span>`
+    btn.innerHTML = `${key}: <span class="blue">${userNutrition[key]}</span> g`
     display.append(btn)
   }
 }

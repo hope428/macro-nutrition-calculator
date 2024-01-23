@@ -79,6 +79,8 @@ button {
 
 button:hover {
     transform: scale(1.1);
+    background-color: rgb(199, 150, 231);
+    cursor: pointer;
 }
 
 #output {
