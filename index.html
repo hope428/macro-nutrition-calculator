@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Macro Calculator</title>
-</head>
-<body>
-    <form>
-        <input type="text" id="servingSizeG" placeholder="Serving Size (g)"/>
-        <input type="text" id="servingCal" placeholder="Calories"/>
-        <input type="text" id="servingP" placeholder="Protein"/>
-        <input type="text" id="servingCarb" placeholder="Carbs"/>
-        <input type="text" id="servingSatFat" placeholder="Fat"/>
+  </head>
+  <body>
+    <main>
+      <h1>Macro Nutrient Calculator</h1>
+      <form>
+        <div id="input-fields">
+          <input type="text" id="servingSizeG" placeholder="Serving Size (g)" />
+          <input type="text" id="servingCal" placeholder="Calories" />
+          <input type="text" id="servingP" placeholder="Protein" />
+          <input type="text" id="servingCarb" placeholder="Carbs" />
+          <input type="text" id="servingSatFat" placeholder="Fat" />
 
-        <input type="text" id="userSizeG" placeholder="Your serving (g)"/>
+          <input type="text" id="userSizeG" placeholder="Your serving (g)" />
+        </div>
         <button id="submit">Calculate Your Nutrition</button>
-    </form>
-    <div id="output">
-
-    </div>
+      </form>
+      <div id="output"></div>
+    </main>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

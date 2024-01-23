@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: rgba(40,39,58,255);
+    height: 100vh;
+}
+
+main {
+    margin: 5rem auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem 0;
+    color: rgba(252,213,3,255);
+    position: relative;
+}
+
+h1:after {
+    content: '';
+    height: .1rem;
+    background-color: yellow;
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-fields {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 1rem;
+    max-width: 75vw;
+}
+
+form button {
+    width: 200px;
+    margin: 1rem auto;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+
+input {
+    line-height: 2rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button {
+    line-height: 2rem;
+    border-radius: 4px;
+    border: none;
+    color: rgba(252,213,3,255);
+    background-color: rgb(223, 106, 169);
+    font-weight: bold;
+    width: 100%;
+    transition: .5s;
+}
+
+.blue {
+    color: rgba(81,223,254,255);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#output {
+    display: grid;
+    margin: 0 auto;
+    max-width: 75%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem
+}
+
+#output button {
+    font-size: 1.2rem;
+    padding: .5rem;
+}

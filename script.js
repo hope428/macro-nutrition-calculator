@@ -12,10 +12,10 @@ const calculateMacros = (e) => {
 
   const amount = userSizeG.value / suggestedServing.value;
 
-  userNutrition.calories = servingCal.value * amount;
-  userNutrition.protein = servingProtein.value * amount;
-  userNutrition.carbs = servingCarb.value * amount;
-  userNutrition.fat = servingSatFat.value * amount;
+  userNutrition.calories = (servingCal.value * amount).toFixed(2);
+  userNutrition.protein = (servingProtein.value * amount).toFixed(2);
+  userNutrition.carbs = (servingCarb.value * amount).toFixed(2);
+  userNutrition.fat = (servingSatFat.value * amount).toFixed(2);
 
   displayMacros()
 };
@@ -28,7 +28,7 @@ const displayMacros = (e) => {
     console.log(`${key}: ${userNutrition[key]}`)
 
     const btn = document.createElement('button')
-    btn.innerHTML = `${key}: ${userNutrition[key]}`
+    btn.innerHTML = `${key}: <span class="blue">${userNutrition[key]}g<span>`
     display.append(btn)
   }
 }
